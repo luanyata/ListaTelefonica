@@ -19,6 +19,7 @@
 			$scope.operadoras =[];
 			/*A partir da versão 1.6 o .success e .error 
 			 *foram descontinuados dando lugar ao .then que recebe um response
+			 * http://stackoverflow.com/questions/41183845/error-with-http-get-in-angularjs-success-not-a-function
 			 */
 			 var carregarContatos = function(){
 			 	$http.get("http://localhost:3412/contatos").then(function(response){

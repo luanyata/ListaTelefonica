@@ -6,6 +6,10 @@
 	margin-right: auto;	
 }
 
+h3 {
+	margin-bottom: 30px;
+}
+
 .table {
 	margin-top: 20px;
 }
@@ -29,4 +33,8 @@
 
 .footer{
 	text-align: center;
+}
+
+hr {
+	border-color: #999;
 }

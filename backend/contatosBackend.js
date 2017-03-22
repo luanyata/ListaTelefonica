@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 
-//app.use(express.static(__dirname + '/public'));
-//app.use(express.bodyParser());
+app.use(express.static(__dirname + '/public'));
+//app.use(express.bodyParserd());
 
 var contatos = [
 	{nome: "Bruno", telefone: "9999-2222", data: new Date(), operadora: {nome: "Oi", codigo: 14, categoria: "Celular"}},
@@ -31,6 +31,7 @@ app.get('/contatos', function(req, res) {
 });
 
 app.post('/contatos', function(req, res) {
+	console.log(req.body);
   contatos.push(req.body);
   res.json(true);
 });

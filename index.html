@@ -17,6 +17,7 @@
 	<script src="js/filters/ellipsisFilter.js"></script>
 	<script src="js/directives/uiAlertDirective.js"></script>
 	<script src="js/directives/uiDateDirective.js"></script>
+	<script src="js/directives/uiAccordionDirective.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/ui.css">
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
@@ -24,6 +25,18 @@
 </head>
 <body ng-controller="listaTelefonicaController">
 	<div class="jumbotron">
+		<ui-accordions>
+			<ui-accordion title="Accordion 1">
+				Com o objetivo de desenvolver software de qualidade, as empresas cada vez mais investem nas atividades de Testes de Software. No entanto, essa é uma atividade de custos elevados e que consome muito tempo. Assim, empresas de software e institutos de pesquisa têm investido na criação de ferramentas de geração automática de Casos de Testes a partir de especificações do software. Essas ferramentas têm por objetivo gerar suítes de teste que exercitem o código completo, a partir de combinações de passos de execução e resultados esperados. Contudo, essas ferramentas geralmente geram uma quantidade excessiva de Casos de Teste (CTs). Quando não há tempo ou recursos disponíveis para executar a suíte completa, os responsáveis pelos 
+			</ui-accordion>
+
+			<ui-accordion title="Accordion 2">
+				Com o objetivo de desenvolver software de qualidade, as empresas cada vez mais investem nas atividades de Testes de Software. No entanto, essa é uma atividade de custos elevados e que consome muito tempo. Assim, empresas de software e institutos de pesquisa têm investido na criação de ferramentas de geração automática de Casos de Testes a partir de especificações do software. Essas ferramentas têm por objetivo gerar suítes de teste que exercitem o código completo, a partir de combinações de passos de execução e resultados esperados. Contudo, essas ferramentas geralmente geram uma quantidade excessiva de Casos de Teste (CTs). Quando não há tempo ou recursos disponíveis para executar a suíte completa, os responsáveis pelos 
+
+			</ui-accordion>
+		</ui-accordions>
+		</hr>
+
 		<h3>{{app}}</h3>
 		<ui-alert title="Ops, aconteceu um problema!" >
 			{{error}}
